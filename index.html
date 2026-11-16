@@ -1,125 +1,15 @@
 <!DOCTYPE html>
-<html lang="id" data-theme="light">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Fotofolio Fitri Ayu Sabrina</title>
-  <meta name="description" content="Fotofolio dan perjalanan pendidikan Fitri Ayu Sabrina, siswi PPLG SMKN 1 Bangkinang.">
-  <meta name="theme-color" content="#f5f0ff">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fotofolio Martha Aisyah Putri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="progress" id="progress" aria-hidden="true"></div>
-  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
-
-  <header class="nav" id="nav">
-    <a class="nav__logo" href="#home" id="logo" aria-label="Beranda">F<span>.</span></a>
-    <nav class="nav__links" id="navLinks" aria-label="Menu utama">
-      <a href="#home" class="is-active">Home</a>
-      <a href="#tentang">Tentang</a>
-      <a href="#sekolah">Sekolah</a>
-      <a href="#fokus">Fokus</a>
-      <a href="#galeri" id="navGaleri" hidden>Galeri</a>
-      <a href="#kontak" id="navKontak" hidden>Kontak</a>
-    </nav>
-    <button class="nav__theme" id="themeBtn" type="button" aria-label="Ganti tema terang atau gelap">
-      <svg class="i-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-      <svg class="i-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-    </button>
-  </header>
-
-  <main>
-    <!-- HOME -->
-    <section class="hero" id="home">
-      <div class="hero__text reveal">
-        <p class="eyebrow"><span class="dot"></span> Fotofolio pelajar</p>
-        <h1>Halo, aku <span class="grad" id="nama">Fitri Ayu Sabrina</span></h1>
-        <p class="role"><span id="peran"></span><span class="caret"></span></p>
-        <p class="bio" id="bio"></p>
-        <div class="cta">
-          <a class="btn btn--main" href="#tentang">Kenalan yuk</a>
-          <a class="btn btn--glass" href="#sekolah">Lihat perjalanan</a>
-        </div>
-      </div>
-
-      <figure class="hero__photo reveal">
-        <div class="arch"><img id="heroFoto" src="foto/foto-1.jpg" alt="Foto profil"></div>
-        <figcaption class="tag tag--a" id="tagKelas"></figcaption>
-        <figcaption class="tag tag--b" id="tagSekolah"></figcaption>
-      </figure>
-    </section>
-
-    <!-- STATS -->
-    <section class="stats reveal" id="stats" aria-label="Ringkasan"></section>
-
-    <!-- TENTANG -->
-    <section class="sec" id="tentang">
-      <header class="sec__head reveal">
-        <p class="sec__no">01</p>
-        <h2>Tentang aku</h2>
-      </header>
-      <div class="bento">
-        <article class="card card--story reveal">
-          <p id="tentangText"></p>
-        </article>
-        <div class="bento__fields" id="detail"></div>
-      </div>
-    </section>
-
-    <!-- SEKOLAH -->
-    <section class="sec" id="sekolah">
-      <header class="sec__head reveal">
-        <p class="sec__no">02</p>
-        <h2>Perjalanan sekolah</h2>
-      </header>
-      <ol class="timeline" id="timeline"></ol>
-    </section>
-
-    <!-- FOKUS -->
-    <section class="sec" id="fokus">
-      <header class="sec__head reveal">
-        <p class="sec__no">03</p>
-        <h2>Yang lagi kupelajari</h2>
-      </header>
-      <div class="focus" id="fokusList"></div>
-    </section>
-
-    <!-- GALERI -->
-    <section class="sec" id="galeri" hidden>
-      <header class="sec__head reveal">
-        <p class="sec__no">04</p>
-        <h2>Galeri</h2>
-      </header>
-      <div class="gallery" id="galeriList"></div>
-    </section>
-
-    <!-- KONTAK -->
-    <section class="sec" id="kontak" hidden>
-      <header class="sec__head reveal">
-        <p class="sec__no">05</p>
-        <h2>Hubungi aku</h2>
-      </header>
-      <div class="contact" id="kontakList"></div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p class="footer__name" id="footerText"></p>
-    <p class="footer__sub">Dibuat dengan HTML, CSS, dan JavaScript</p>
-  </footer>
-
-  <a class="top" id="top" href="#home" aria-label="Ke atas">
-    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-  </a>
-
-  <div class="lightbox" id="lightbox" hidden>
-    <button type="button" class="lightbox__x" id="lightboxX" aria-label="Tutup">&times;</button>
-    <img id="lightboxImg" alt="">
-  </div>
-
-  <script src="script.js"></script>
+<body data-t="">
+<div data-r="hero"></div><div data-r="cards"></div>
+<script src="script.js"></script>
 </body>
 </html>
